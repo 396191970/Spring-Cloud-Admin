@@ -1,3 +1,7 @@
+# zipkin 调用链追踪
+# 功能
+mysql 存储 
+rabbitmq 收集
 # 运行下载命令
 ```
 $ curl -sSL https://zipkin.io/quickstart.sh | bash -s
