@@ -42,6 +42,9 @@ spring:
       http:
         legacy:
           enabled: true
+      sampler:
+        probability: 1
+
 
 mybatis:
     basepackage: com.github.wxiaoqi.security.auth.mapper

@@ -10,7 +10,7 @@ public interface AuthClientService {
     public String apply(String clientId, String secret) throws Exception;
 
     /**
-     * 获取授权的客户端列表
+     * 获取授权的客户端列表 会判断serviceId 和 secret 密钥是否正确
      * @param serviceId
      * @param secret
      * @return

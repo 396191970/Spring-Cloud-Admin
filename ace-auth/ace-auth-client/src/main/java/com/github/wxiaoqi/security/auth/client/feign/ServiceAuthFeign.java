@@ -13,6 +13,12 @@ import java.util.List;
  */
 @FeignClient(value = "${auth.serviceId}",configuration = {})
 public interface ServiceAuthFeign {
+    /**
+     *  获取授权的客户端列表 会判断serviceId 和 secret 密钥是否正确
+     * @param serviceId
+     * @param secret
+     * @return
+     */
     @RequestMapping(value = "/client/myClient")
     public ObjectRestResponse<List<String>> getAllowedClient(@RequestParam("serviceId") String serviceId, @RequestParam("secret") String secret);
     @RequestMapping(value = "/client/token",method = RequestMethod.POST)

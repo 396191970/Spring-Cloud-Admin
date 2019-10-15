@@ -14,6 +14,9 @@ public class ServiceAuthConfig {
     private String clientId;
     @Value("${auth.client.secret}")
     private String clientSecret;
+    /**
+     * http 请求那个key 放入token
+     */
     @Value("${auth.client.token-header}")
     private String tokenHeader;
     @Value("${spring.application.name}")

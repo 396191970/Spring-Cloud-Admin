@@ -48,6 +48,8 @@ spring:
     http:
       legacy:
         enabled: true
+    sampler:
+      probability: 1
   cloud:
     gateway:
       locator:
