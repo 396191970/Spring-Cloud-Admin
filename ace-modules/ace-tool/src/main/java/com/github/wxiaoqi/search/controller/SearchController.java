@@ -49,7 +49,7 @@ public class SearchController {
         return luceneService.page(pageNumber, pageSize, word);
     }
 
-    @RequestMapping(value = "/index", method = RequestMethod.POST)
+    @RequestMapping(value = "/index")
     public ObjectRestResponse createIndexObject(@RequestBody IndexObject indexObject) {
         luceneService.save(indexObject);
         return new ObjectRestResponse();

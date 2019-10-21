@@ -70,7 +70,13 @@ spring:
         - Path=/api/admin/**
         filters:
         - StripPrefix=2
-
+      - id: partner
+        uri: lb://partner
+        order: 8002
+        predicates:
+          - Path=/api/partner/**
+        filters:
+          - StripPrefix=2
 logging:
   level:
     com.github.wxiaoqi.security.gate.v2: info

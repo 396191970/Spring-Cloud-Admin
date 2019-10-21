@@ -22,7 +22,7 @@ public class ClientController{
     @Autowired
     private KeyConfiguration keyConfiguration;
 
-    @RequestMapping(value = "/token", method = RequestMethod.POST)
+    @RequestMapping(value = "/token")
     public ObjectRestResponse getAccessToken(String clientId, String secret) throws Exception {
         return new ObjectRestResponse<String>().data(authClientService.apply(clientId, secret));
     }

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.tuobuxie.partner.mapper.DistributionPackageMapper">
+
+	<!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="com.tuobuxie.partner.entity.DistributionPackage" id="distributionPackageMap">
+        <result property="id" column="id"/>
+        <result property="productLevel" column="product_level"/>
+        <result property="partnerLevel" column="partner_level"/>
+        <result property="rate" column="rate"/>
+    </resultMap>
+
+</mapper>

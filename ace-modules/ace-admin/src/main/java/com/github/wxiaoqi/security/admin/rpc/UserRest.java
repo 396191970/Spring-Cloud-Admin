@@ -35,7 +35,7 @@ public class UserRest {
         return permissionService.getPermissionByUsername(username);
     }
 
-    @RequestMapping(value = "/user/validate", method = RequestMethod.POST)
+    @RequestMapping(value = "/user/validate")
     public @ResponseBody UserInfo validate(@RequestBody Map<String,String> body){
         return permissionService.validate(body.get("username"),body.get("password"));
     }

@@ -23,7 +23,7 @@ public class AuthController {
     @Autowired
     private AuthService authService;
 
-    @RequestMapping(value = "token", method = RequestMethod.POST)
+    @RequestMapping(value = "token")
     public ObjectRestResponse<String> createAuthenticationToken(
             @RequestBody JwtAuthenticationRequest authenticationRequest) throws Exception {
         log.info(authenticationRequest.getUsername()+" require logging...");

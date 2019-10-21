@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.tuobuxie.partner.mapper.IncomeListMapper">
+
+	<!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="com.tuobuxie.partner.entity.IncomeList" id="incomeListMap">
+        <result property="id" column="id"/>
+        <result property="productName" column="product_name"/>
+        <result property="productId" column="product_id"/>
+        <result property="description" column="description"/>
+        <result property="price" column="price"/>
+        <result property="discount" column="discount"/>
+        <result property="quantity" column="quantity"/>
+        <result property="totalPrice" column="total_price"/>
+        <result property="popularizeUserId" column="popularize_user_id"/>
+        <result property="popularizeCode" column="popularize_code"/>
+        <result property="createTime" column="create_time"/>
+        <result property="tradeTime" column="trade_time"/>
+        <result property="isDistribution" column="is_distribution"/>
+    </resultMap>
+
+</mapper>
