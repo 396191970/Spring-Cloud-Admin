@@ -1,12 +1,13 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="com.tuobuxie.partner.mapper.ShopGroupMapper" >
-  <resultMap id="BaseResultMap" type="com.tuobuxie.partner.entity.ShopGroup" >
-    <!--
-      WARNING - @mbg.generated
-    -->
-    <id column="id" property="id" jdbcType="INTEGER" />
-    <result column="name" property="name" jdbcType="VARCHAR" />
-    <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
-  </resultMap>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.tuobuxie.partner.mapper.ShopGroupMapper">
+
+	<!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="com.tuobuxie.partner.entity.ShopGroup" id="shopGroupMap">
+        <result property="id" column="id"/>
+        <result property="name" column="name"/>
+        <result property="crtTime" column="crt_time"/>
+    </resultMap>
+
 </mapper>

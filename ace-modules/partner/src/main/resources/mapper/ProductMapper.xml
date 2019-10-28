@@ -11,7 +11,16 @@
         <result property="imageUrl" column="image_url"/>
         <result property="price" column="price"/>
         <result property="distributionLevel" column="distribution_level"/>
-        <result property="createTime" column="create_time"/>
+        <result property="shopId" column="shop_id"/>
+        <result property="shopName" column="shop_name"/>
+        <result property="updTime" column="upd_time"/>
+        <result property="updUser" column="upd_user"/>
+        <result property="updName" column="upd_name"/>
+        <result property="updHost" column="upd_host"/>
+        <result property="crtTime" column="crt_time"/>
+        <result property="crtUser" column="crt_user"/>
+        <result property="crtName" column="crt_name"/>
+        <result property="crtHost" column="crt_host"/>
     </resultMap>
 
 </mapper>

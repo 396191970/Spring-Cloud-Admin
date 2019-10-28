@@ -1,11 +1,9 @@
 package com.tuobuxie.partner.biz;
 
-import com.tuobuxie.partner.entity.Partner;
-import org.springframework.stereotype.Service;
-
+import com.github.wxiaoqi.security.common.biz.BaseBiz;
 import com.tuobuxie.partner.entity.PayList;
 import com.tuobuxie.partner.mapper.PayListMapper;
-import com.github.wxiaoqi.security.common.biz.BaseBiz;
+import org.springframework.stereotype.Service;
 
 import java.util.Date;
 
@@ -19,11 +17,4 @@ import java.util.Date;
 @Service
 public class PayListBiz extends BaseBiz<PayListMapper,PayList> {
 
-    @Override
-    public void insert(PayList entity) {
-        Date date = new Date();
-        entity.setCreateTime(date);
-        entity.setTradeTime(date);
-        super.insert(entity);
-    }
 }

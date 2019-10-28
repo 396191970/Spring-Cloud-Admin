@@ -9,6 +9,14 @@
         <result property="productLevel" column="product_level"/>
         <result property="partnerLevel" column="partner_level"/>
         <result property="rate" column="rate"/>
+        <result property="updTime" column="upd_time"/>
+        <result property="updUser" column="upd_user"/>
+        <result property="updName" column="upd_name"/>
+        <result property="updHost" column="upd_host"/>
+        <result property="crtTime" column="crt_time"/>
+        <result property="crtUser" column="crt_user"/>
+        <result property="crtName" column="crt_name"/>
+        <result property="crtHost" column="crt_host"/>
     </resultMap>
 
 </mapper>

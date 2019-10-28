@@ -10,7 +10,7 @@ import javax.persistence.*;
  * 
  * @author Shaofeng Li
  * @email 396191970@qq.com
- * @date 2019-10-19 16:33:03
+ * @date 2019-10-27 22:33:04
  */
 @Table(name = "partner")
 public class Partner implements Serializable {
@@ -32,9 +32,13 @@ public class Partner implements Serializable {
     @Column(name = "level")
     private Integer level;
 	
-	    //
-    @Column(name = "create_time")
-    private Date createTime;
+	    //创建时间
+    @Column(name = "crt_time")
+    private Date crtTime;
+	
+	    //用户id
+    @Column(name = "user_id")
+    private Integer userId;
 	
 
 	/**
@@ -86,15 +90,27 @@ public class Partner implements Serializable {
 		return level;
 	}
 	/**
-	 * 设置：
+	 * 设置：创建时间
 	 */
-	public void setCreateTime(Date createTime) {
-		this.createTime = createTime;
+	public void setCrtTime(Date crtTime) {
+		this.crtTime = crtTime;
 	}
 	/**
-	 * 获取：
+	 * 获取：创建时间
 	 */
-	public Date getCreateTime() {
-		return createTime;
+	public Date getCrtTime() {
+		return crtTime;
+	}
+	/**
+	 * 设置：用户id
+	 */
+	public void setUserId(Integer userId) {
+		this.userId = userId;
+	}
+	/**
+	 * 获取：用户id
+	 */
+	public Integer getUserId() {
+		return userId;
 	}
 }

@@ -1,24 +1,18 @@
 package com.tuobuxie.partner.biz;
 
-import com.github.wxiaoqi.security.common.biz.BaseBiz;
-import com.tuobuxie.partner.entity.Shop;
+import org.springframework.stereotype.Service;
+
 import com.tuobuxie.partner.entity.ShopGroup;
 import com.tuobuxie.partner.mapper.ShopGroupMapper;
-import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
-
-import java.util.Date;
+import com.github.wxiaoqi.security.common.biz.BaseBiz;
 
 /**
+ * 
+ *
  * @author Shaofeng Li
+ * @email 396191970@qq.com
+ * @date 2019-10-27 22:33:04
  */
 @Service
-@Transactional(rollbackFor = Exception.class)
-public class ShopGroupBiz extends BaseBiz<ShopGroupMapper, ShopGroup> {
-    @Override
-    public void insert(ShopGroup entity) {
-        Date date = new Date();
-        entity.setCreateTime(date);
-        super.insert(entity);
-    }
+public class ShopGroupBiz extends BaseBiz<ShopGroupMapper,ShopGroup> {
 }

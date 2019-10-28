@@ -11,8 +11,17 @@
         <result property="beforeBalance" column="before_balance"/>
         <result property="afterBalance" column="after_balance"/>
         <result property="description" column="description"/>
-        <result property="tradeTime" column="trade_time"/>
         <result property="orderId" column="order_id"/>
+        <result property="updTime" column="upd_time"/>
+        <result property="updUser" column="upd_user"/>
+        <result property="updName" column="upd_name"/>
+        <result property="updHost" column="upd_host"/>
+        <result property="crtTime" column="crt_time"/>
+        <result property="crtUser" column="crt_user"/>
+        <result property="crtName" column="crt_name"/>
+        <result property="crtHost" column="crt_host"/>
+        <result property="userName" column="user_name"/>
+        <result property="userId" column="user_id"/>
     </resultMap>
 
 </mapper>

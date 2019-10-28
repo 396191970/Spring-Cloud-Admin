@@ -15,9 +15,17 @@
         <result property="totalPrice" column="total_price"/>
         <result property="popularizeUserId" column="popularize_user_id"/>
         <result property="popularizeCode" column="popularize_code"/>
-        <result property="createTime" column="create_time"/>
-        <result property="tradeTime" column="trade_time"/>
         <result property="isDistribution" column="is_distribution"/>
+        <result property="updTime" column="upd_time"/>
+        <result property="updUser" column="upd_user"/>
+        <result property="updName" column="upd_name"/>
+        <result property="updHost" column="upd_host"/>
+        <result property="crtTime" column="crt_time"/>
+        <result property="crtUser" column="crt_user"/>
+        <result property="crtName" column="crt_name"/>
+        <result property="crtHost" column="crt_host"/>
+        <result property="shopId" column="shop_id"/>
+        <result property="shopName" column="shop_name"/>
     </resultMap>
 
 </mapper>

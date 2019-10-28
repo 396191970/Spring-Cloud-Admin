@@ -11,6 +11,14 @@
         <result property="availableBalance" column="available_balance"/>
         <result property="frozenBalance" column="frozen_balance"/>
         <result property="totalBalance" column="total_balance"/>
+        <result property="updTime" column="upd_time"/>
+        <result property="updUser" column="upd_user"/>
+        <result property="updName" column="upd_name"/>
+        <result property="updHost" column="upd_host"/>
+        <result property="crtTime" column="crt_time"/>
+        <result property="crtUser" column="crt_user"/>
+        <result property="crtName" column="crt_name"/>
+        <result property="crtHost" column="crt_host"/>
     </resultMap>
 
 </mapper>
